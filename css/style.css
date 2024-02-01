@@ -72,11 +72,12 @@ h2 {
 }
 
 .top {
-    background: url("../images/background-top.png") no-repeat;
+    background: url("../images/background-top.png");
+    background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     width: 100dvw;
-    height: 120dvh;
+    height: 140dvh;
 }
 
 .top__inner {
@@ -85,7 +86,6 @@ h2 {
     justify-content: center;
     align-items: flex-start;
     margin-left: 55%;
-    max-width: 500px;
 }
 
 .top__image {
@@ -96,6 +96,7 @@ h2 {
 
 .top__text {
     margin-top: 150px;
+    width: 500px;
 }
 
 .top__button {
@@ -118,7 +119,7 @@ h2 {
     background-position: top;
     background-size: cover;
     width: 100dvw;
-    height: 180dvh;
+    height: 240dvh;
 }
 
 .cream__inner {
@@ -176,7 +177,7 @@ h2 {
     background-position: top;
     background-size: cover;
     width: 100dvw;
-    height: 120dvh;
+    height: 160dvh;
 }
 
 .properties__title {
@@ -246,7 +247,7 @@ h2 {
     background-position: top;
     background-size: cover;
     width: 100dvw;
-    height: 100dvh;
+    height: 120dvh;
 }
 
 .application__list {
@@ -315,7 +316,6 @@ h2 {
     align-items: center;
 
     padding-top: 150px;
-    height: inherit;
 }
 
 .about__text {
@@ -339,6 +339,7 @@ h2 {
     background-position: top;
     background-size: cover;
     width: 100dvw;
+    height: 80dvh;
 }
 
 .advantages__inner {
@@ -346,8 +347,8 @@ h2 {
     justify-content: center;
     text-align: center;
     gap: 0 100px;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 350px;
+    padding-bottom: 350px;
 }
 
 .advantages__text {
