@@ -1,0 +1,430 @@
+:root {
+    --main-background: #ccc;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+p,
+.text-gradient {
+    background-image: linear-gradient(to right, #c3b681 0%, #bf9059 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #000000;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.menu__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 50px;
+    min-height: 100px;
+}
+
+.top {
+    background: url("../images/background-top.png") no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 120dvh;
+}
+
+.top__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 55%;
+    max-width: 500px;
+}
+
+.top__image {
+    margin-top: 150px;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.top__text {
+    margin-top: 150px;
+}
+
+.top__button {
+    margin-top: 50px;
+}
+
+.button {
+    appearance: none;
+    border: 0;
+    border-radius: 3px;
+    background: linear-gradient(to right, #c3b681 0%, #bf9059 100%);
+    color: #000000;
+    padding: 16px 16px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.products {
+    background: url("../images/background-products.png") no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 180dvh;
+}
+
+.cream__inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 150px;
+    gap: 0 100px;
+}
+
+.serum__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 0 100px;
+}
+
+.cream__image,
+.serum__image {
+    width: 450px;
+    height: auto;
+}
+
+.cream__text,
+.serum__text {
+    margin-top: 30px;
+    max-width: 450px;
+}
+
+.promo__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.promo__text {
+    font-size: 1.3rem;
+}
+
+.promo__button {
+    margin-top: 50px;
+}
+
+.properties {
+    background: url("../images/background-properties.png") no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 120dvh;
+}
+
+.properties__title {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.properties__inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 0 0px;
+    padding-bottom: 100px;
+}
+
+.properties__description {
+    margin-top: 50px;
+}
+
+.properties-description__title {
+    font-size: 1.5rem;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.properties__text {
+    max-width: 500px;
+    text-align: left;
+    padding: 25px 50px;
+}
+
+.background-cream {
+    position: relative;
+    background: url("../images/background-cream.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.background-cream::after {
+    position: absolute;
+    content: url("../images/diamond.png");
+    right: -70px;
+    bottom: -10px;
+}
+
+.stamp {
+    background: url("../images/background-stamp.jpg") no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.stamp__inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 150px;
+}
+
+.application {
+    background: url("../images/background-application.jpg") no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100dvh;
+}
+
+.application__list {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 100px 0;
+    width: 600px;
+    padding-top: 100px;
+}
+
+.application__image {
+    padding-top: 100px;
+}
+
+.application__list li {
+    position: relative;
+}
+
+.application__list li:nth-child(1)::before {
+    position: absolute;
+    content: url("../images/number-1.png");
+
+    top: 0;
+    left: -100px;
+}
+
+.application__list li:nth-child(2)::before {
+    position: absolute;
+    content: url("../images/number-2.png");
+    
+    top: 0;
+    left: -100px;
+}
+
+.application__list li:nth-child(3)::before {
+    position: absolute;
+    content: url("../images/number-3.png");
+
+    top: 0;
+    left: -100px;
+}
+
+.application__list li:nth-child(4)::before {
+    position: absolute;
+    content: url("../images/number-4.png");
+
+    top: 0;
+    left: -100px;
+}
+
+.about {
+    background: url("../images/background-about.png") no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 120dvh;
+}
+
+.about__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 150px;
+    height: inherit;
+}
+
+.about__text {
+    padding: 15px;
+    width: 600px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.about__inner:last-child::after {
+    position: absolute;
+    content: url("../images/crown.png");
+
+    bottom: -600px;
+    left: 50px;
+    right: 0;
+}
+
+.advantages {
+    background: url("../images/background.png") no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.advantages__inner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 0 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.advantages__text {
+    width: 300px;
+}
+
+.advantages p {
+    position: relative;
+}
+
+.advantages p:nth-child(1)::before {
+    position: absolute;
+    content: url("../images/advantages-1.png");
+
+    top: -150px;
+    left: 0;
+    right: 0;
+}
+
+.advantages p:nth-child(2)::before {
+    position: absolute;
+    content: url("../images/advantages-2.png");
+
+    top: -150px;
+    left: 0;
+    right: 0;
+}
+
+.advantages p:nth-child(3)::before {
+    position: absolute;
+    content: url("../images/advantages-3.png");
+
+    top: -150px;
+    left: 0;
+    right: 0;
+}
+
+.make-step {
+    position: relative;
+    background: url("../images/background-make-step.jpg") no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 120dvh;
+}
+
+.make-step__inner {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 150px;
+    height: 120dvh;
+}
+
+.footer {
+    background: url("../images/background.png") no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0 150px;
+
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.footer__inner h2 {
+    padding-bottom: 20px;
+}
+
+.footer__image {
+    width: 30%;
+}
+
+.footer__contact {
+    width: 50%;
+}
+
+.footer__contact p {
+    padding-bottom: 10px;
+}
