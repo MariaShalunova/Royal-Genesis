@@ -52,9 +52,10 @@ ul {
 
 p,
 .text-gradient {
+    color: #c3b681;
     background-image: linear-gradient(to right, #c3b681 0%, #bf9059 100%);
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent !important;
 }
 
 .button {
@@ -80,7 +81,7 @@ body {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: calc(20px + (30 - 20) * var(--formula));
 }
 
 .header {
@@ -152,6 +153,8 @@ h2 {
 }
 
 .serum__inner {
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,15 +166,31 @@ h2 {
 
 .cream__image,
 .serum__image {
-    width: calc(250px + (500 - 250) * var(--formula));
+    width: calc(250px + (550 - 250) * var(--formula));
     height: 100%;
 }
 
 .cream__text,
 .serum__text {
+    text-align: left;
     margin-top: 30px;
     margin-bottom: 30px;
     width: calc(250px + (500 - 250) * var(--formula));
+}
+
+.serum__inner::after {
+    position: absolute;
+    content: '';
+
+    background-image: url("../images/signature.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+
+    top: calc(100px + (200 - 100) * var(--formula));
+
+    width: calc(150px + (500 - 150) * var(--formula));
+    height: 100%;
 }
 
 .promo__inner {
@@ -184,7 +203,7 @@ h2 {
 }
 
 .promo__text {
-    font-size: calc(1rem + (1.3 - 1) * var(--formula));
+    font-size: calc(20px + (30 - 20) * var(--formula));
     padding: 0 calc(25px + (50 - 25) * var(--formula));
     text-align: center;
 }
@@ -261,7 +280,7 @@ h2 {
 }
 
 .stamp__image {
-    width: calc(75px + (230 - 75) * var(--formula));;
+    width: calc(90px + (230 - 90) * var(--formula));;
     height: 100%;
 }
 
@@ -352,7 +371,7 @@ h2 {
     align-items: center;
 
     padding-top: calc(75px + (150 - 75) * var(--formula));
-    padding-bottom: calc(150px + (500 - 150) * var(--formula));
+    padding-bottom: calc(250px + (700 - 250) * var(--formula));
     
     width: calc(250px + (var(--width-text) - 250) * var(--formula));
 }
@@ -363,7 +382,7 @@ h2 {
 }
 
 .about__text {
-    text-align: justify;
+    text-align: left;
     padding: 15px 0;
     text-indent: calc(25px + (50 - 25) * var(--formula));
 }
@@ -380,6 +399,22 @@ h2 {
     top: 0;
 
     width: calc(300px + (1000 - 300) * var(--formula));
+    height: 100%;
+}
+
+.about__inner::before {
+    position: absolute;
+    content: '';
+
+    background-image: url("../images/signature.png ");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+
+    bottom: calc(150px + (500 - 150) * var(--formula));
+    left: calc(150px + (350 - 150) * var(--formula));
+
+    width: calc(150px + (500 - 150) * var(--formula));
     height: 100%;
 }
 
@@ -440,8 +475,6 @@ h2 {
     background: url("../images/background-make-step.jpg") no-repeat;
     background-position: top;
     background-size: cover;
-
-    height: 100dvh;
 }
 
 .make-step__inner {
@@ -449,7 +482,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    height: 100%;
+    padding-top: calc(150px + (1200 - 150) * var(--formula));
+    padding-bottom: calc(0px + (200 - 0) * var(--formula));
 }
 
 .footer {
