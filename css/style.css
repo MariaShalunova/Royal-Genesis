@@ -1,3 +1,19 @@
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Roboto-Regular.ttf) format("ttf");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/Roboto-Bold.ttf) format("ttf");
+}
+
 :root {
     --formula: ((100vw - 320px) / (1920 - 320));
     --inner-margin-x: 0 25px;
@@ -60,8 +76,8 @@ body {
     font-family: sans-serif;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+    font-family: Roboto, sans-serif;
 }
-
 
 h2 {
     font-size: 2rem;
