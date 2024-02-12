@@ -1,3 +1,9 @@
+:root {
+    --formula: ((100vw - 320px) / (1920 - 320));
+    --inner-margin-x: 0 25px;
+    --width-text: 500;
+}
+
 @font-face {
     font-display: swap;
     font-family: Roboto;
@@ -14,19 +20,12 @@
     src: url(../fonts/Roboto-Bold.ttf) format("ttf");
 }
 
-:root {
-    --formula: ((100vw - 320px) / (1920 - 320));
-    --inner-margin-x: 0 25px;
-    --width-text: 600;
-}
-
 *,
 *::after,
 *::before {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    background-origin: border-box;
 }
 
 a {
@@ -55,7 +54,8 @@ p,
     color: #c3b681;
     background-image: linear-gradient(to right, #c3b681 0%, #bf9059 100%);
     background-clip: text;
-    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .button {
@@ -72,7 +72,7 @@ p,
 
 body {
     background-color: #000000;
-    font-size: calc(14px + (20 - 14) * var(--formula));
+    font-size: calc(10px + (20 - 10) * var(--formula));
     font-weight: normal;
     font-family: sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -98,7 +98,7 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
 
-    gap: 0 50px;
+    gap: 0 calc(25px + (100 - 25) * var(--formula));
     height: calc(75px + (100 - 75) * var(--formula));
 }
 
@@ -125,6 +125,7 @@ h2 {
 .top__image {
     margin-top: calc(75px + (150 - 75) * var(--formula));
     width: calc(200px + (var(--width-text) - 100 - 200) * var(--formula));
+    height: 100%;
 }
 
 .top__text {
@@ -280,7 +281,7 @@ h2 {
 }
 
 .stamp__image {
-    width: calc(90px + (230 - 90) * var(--formula));;
+    width: calc(80px + (230 - 80) * var(--formula));;
     height: 100%;
 }
 
@@ -312,7 +313,7 @@ h2 {
 }
 
 .application__image {
-    width: calc(250px + (500 - 250) * var(--formula));
+    width: calc(200px + (500 - 200) * var(--formula));
     height: 100%;
 }
 
@@ -412,7 +413,7 @@ h2 {
     background-position: bottom;
 
     bottom: calc(150px + (500 - 150) * var(--formula));
-    left: calc(150px + (350 - 150) * var(--formula));
+    left: calc(100px + (350 - 100) * var(--formula));
 
     width: calc(150px + (500 - 150) * var(--formula));
     height: 100%;
@@ -509,6 +510,7 @@ h2 {
 
 .footer__image {
     width: calc(250px + (500 - 250) * var(--formula));
+    height: 100%;
 }
 
 .footer__nav {
@@ -521,4 +523,22 @@ h2 {
 
 .footer__contact p {
     padding-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+    .background-cream::after {
+        transform: scale(.7);
+        bottom: -30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .top__inner {
+        margin-left: 0;
+    }
+
+    .background-cream::after {
+        transform: scale(.5);
+        bottom: -40px;
+    }
 }
