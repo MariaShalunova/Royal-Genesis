@@ -103,7 +103,7 @@ h2 {
 }
 
 .top {
-    background: url("../images/background-top-1920x1284.webp") no-repeat;
+    background: url("../images/background-top.png") no-repeat;
     background-position: top;
     background-size: cover;
 
@@ -137,7 +137,7 @@ h2 {
 }
 
 .products {
-    background: url("../images/background-products-1920x1680.webp") no-repeat;
+    background: url("../images/background-products.png") no-repeat;
     background-position: top;
     background-size: cover;
 }
