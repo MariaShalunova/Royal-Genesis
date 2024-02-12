@@ -214,7 +214,7 @@ h2 {
 }
 
 .properties {
-    background: url("../images/background-properties.webp") no-repeat;
+    background: url("../images/background-properties.png") no-repeat;
     background-position: top;
     background-size: cover;
 }
@@ -286,7 +286,7 @@ h2 {
 }
 
 .application {
-    background: url("../images/background-application.png") no-repeat;
+    background: url("../images/background-application.jpg") no-repeat;
     background-position: top;
     background-size: cover;
 }
@@ -473,7 +473,7 @@ h2 {
 }
 
 .make-step {
-    background: url("../images/background-make-step.png") no-repeat;
+    background: url("../images/background-make-step.jpg") no-repeat;
     background-position: top;
     background-size: cover;
 }
