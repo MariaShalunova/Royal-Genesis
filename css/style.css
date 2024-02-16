@@ -216,7 +216,7 @@ h2 {
     padding-bottom: calc(75px + (400 - 75) * var(--formula));
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     .top__inner {
         margin-left: 0;
     }
@@ -374,8 +374,9 @@ h2 {
 }
 
 @media (max-width: 500px) {
-    .top__inner {
-        margin-left: 0;
+    .background-cream::after {
+        transform: scale(.5);
+        bottom: -40px;
     }
 }
 
@@ -610,11 +611,22 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 50px 100px;
+    flex-wrap: nowrap;
+    gap: 50px calc(25px + (100 - 25) * var(--formula));;
+
+    
 
     padding-top: 150px;
     padding-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 }
 
 .footer__inner h2 {
