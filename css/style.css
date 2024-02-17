@@ -283,7 +283,7 @@ h2 {
     position: absolute;
     content: '';
 
-    background-image: url("../images/signature.png");
+    background-image: url("../images/signature.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -360,7 +360,7 @@ h2 {
 
 .background-cream::after {
     position: absolute;
-    content: url("../images/diamond.png");
+    content: url("../images/diamond.webp");
 
     right: -70px;
     bottom: -10px;
@@ -437,7 +437,7 @@ h2 {
 
 .application__list li:nth-child(1)::before {
     position: absolute;
-    content: url("../images/number-1.png");
+    content: url("../images/number-1.webp");
 
     top: 0;
     left: calc((75px + (100 - 75) * var(--formula)) * -1);
@@ -445,7 +445,7 @@ h2 {
 
 .application__list li:nth-child(2)::before {
     position: absolute;
-    content: url("../images/number-2.png");
+    content: url("../images/number-2.webp");
     
     top: 0;
     left: calc((75px + (100 - 75) * var(--formula)) * -1);
@@ -454,7 +454,7 @@ h2 {
 .application__list li:nth-child(3)::before {
     position: absolute;
     display: block;
-    content: url("../images/number-3.png");
+    content: url("../images/number-3.webp");
 
     top: 0;
     left: calc((75px + (100 - 75) * var(--formula)) * -1);
@@ -462,7 +462,7 @@ h2 {
 
 .application__list li:nth-child(4)::before {
     position: absolute;
-    content: url("../images/number-4.png");
+    content: url("../images/number-4.webp");
 
     top: 0;
     left: calc((75px + (100 - 75) * var(--formula)) * -1);
@@ -506,7 +506,7 @@ h2 {
     position: absolute;
     content: '';
 
-    background-image: url("../images/crown.png");
+    background-image: url("../images/crown.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -521,7 +521,7 @@ h2 {
     position: absolute;
     content: '';
 
-    background-image: url("../images/signature.png ");
+    background-image: url("../images/signature.webp ");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -561,7 +561,7 @@ h2 {
 
 .advantages p:nth-child(1)::before {
     position: absolute;
-    content: url("../images/advantages-1.png");
+    content: url("../images/advantages-1.webp");
 
     top: calc((150px + (200 - 150) * var(--formula)) * -1);
     left: 0;
@@ -570,7 +570,7 @@ h2 {
 
 .advantages p:nth-child(2)::before {
     position: absolute;
-    content: url("../images/advantages-2.png");
+    content: url("../images/advantages-2.webp");
 
     top: calc((150px + (200 - 150) * var(--formula)) * -1);
     left: 0;
@@ -579,7 +579,7 @@ h2 {
 
 .advantages p:nth-child(3)::before {
     position: absolute;
-    content: url("../images/advantages-3.png");
+    content: url("../images/advantages-3.webp");
 
     top: calc((150px + (200 - 150) * var(--formula)) * -1);
     left: 0;
