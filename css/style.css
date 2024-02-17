@@ -59,6 +59,7 @@ p,
 }
 
 .button {
+    position: relative;
     appearance: none;
     border-radius: 3px;
     background: linear-gradient(to right, #c3b681 0%, #bf9059 100%);
@@ -68,6 +69,26 @@ p,
     font-size: calc(0.5 + (1.5 - 0.5) * var(--formula));
 
     width: fit-content;
+    z-index: 0;
+}
+
+.button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(to right, #c4b473 0%, #c08a4d 100%);
+    height: 100%;
+    width: 0;
+    
+    border-radius: 3px;
+    transition: .5s;
+    z-index: -1;
+}
+
+.button:hover:before{
+    width: 100%;
 }
 
 body {
@@ -194,6 +215,12 @@ h2 {
 
 #menu__toggle:checked ~ .menu__list {
     visibility: visible;
+}
+
+.menu__item:hover {
+    padding: 5px;
+    border-bottom: 3px solid #bf9059;
+    transition: 0.1s;
 }
 
 .top {
