@@ -58,11 +58,9 @@
   width: var(--width-product);
   height: var(--width-product);
   object-fit: contain;
-
 }
 
 .product__text {
   text-align: left;
-
   width: calc(300px + (500 - 300) * var(--formula));
 }
