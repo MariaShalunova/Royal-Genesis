@@ -1,3 +1,8 @@
+:root {
+  --formula: ((100vw - 320px) / (1920 - 320));
+  --width-product: calc(300px + (500 - 300) * var(--formula));
+}
+
 .step1 {
   margin-top: 100px;
 }
@@ -50,14 +55,14 @@
 }
 
 .product__image {
-  width: 500px;
-  height: 300px;
+  width: var(--width-product);
+  height: var(--width-product);
   object-fit: contain;
+
 }
 
 .product__text {
   text-align: left;
 
-  padding-top: 50px;
   width: calc(300px + (500 - 300) * var(--formula));
 }
