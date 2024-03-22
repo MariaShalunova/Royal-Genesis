@@ -255,63 +255,7 @@ h2 {
   margin-top: calc(25px + (50 - 25) * var(--formula));
 }
 
-.products {
-  background: url("../images/background-products.webp") no-repeat;
-  background-position: top;
-  background-size: cover;
-}
 
-.cream__inner {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: center;
-  flex-wrap: wrap;
-  gap: 0 calc(50px + (100 - 50) * var(--formula));
-
-  padding-top: calc(75px + (150 - 75) * var(--formula));
-}
-
-.serum__inner {
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
-  margin-top: calc(75px + (150 - 75) * var(--formula));
-  gap: 0 calc(50px + (100 - 50) * var(--formula));
-}
-
-.cream__image,
-.serum__image {
-  width: calc(250px + (550 - 250) * var(--formula));
-  height: 100%;
-}
-
-.cream__text,
-.serum__text {
-  text-align: left;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: calc(250px + (500 - 250) * var(--formula));
-}
-
-.serum__inner::after {
-  position: absolute;
-  content: "";
-
-  background-image: url("../images/signature.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-
-  top: calc(100px + (200 - 100) * var(--formula));
-
-  width: calc(150px + (500 - 150) * var(--formula));
-  height: 100%;
-}
 
 .promo__inner {
   display: flex;
