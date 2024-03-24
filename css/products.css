@@ -3,12 +3,13 @@
   --width-product: calc(300px + (500 - 300) * var(--formula));
 }
 
-.step1 {
-  margin-top: 100px;
+.step:nth-child(1) {
+  margin-top: 150px;
 }
 
 .step {
-  margin: 150px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .step__title {
@@ -51,7 +52,11 @@
   text-align: center;
   flex-wrap: wrap;
 
-  padding: 100px 0;
+  padding-top: 50px;
+}
+
+.product__title {
+  padding-bottom: 25px;
 }
 
 .product__image {
@@ -63,4 +68,9 @@
 .product__text {
   text-align: left;
   width: calc(300px + (500 - 300) * var(--formula));
+}
+
+.product__image_3-1 {
+  padding-block: 75px;
+  height: 350px;
 }
