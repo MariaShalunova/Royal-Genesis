@@ -5,7 +5,7 @@
 
 body {
   background: url("../images/background-product.png") repeat;
-  background-size: auto;
+  background-size: contain;
 }
 
 .step:nth-child(1) {
