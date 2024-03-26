@@ -55,6 +55,7 @@ body {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+  gap: 15px 15px;
 
   padding-top: 50px;
 }
@@ -71,18 +72,17 @@ body {
 
 .image__wrapper {
   position: relative;
-  width: var(--width-product);
-  height: var(--width-product);
 }
 
 .image__wrapper::before {
   position: absolute;
-  content: url("../images/fon_item.png");
+  content: '';
+  background: '../images/fon_item.png';
 
   top: -10%;
   left: -40%;
-  width: var(--width-product);
-  height: var(--width-product);
+  max-width: var(--width-product);
+  height: auto;
   z-index: -1;
 }
 
