@@ -66,7 +66,6 @@ body {
 .image__wrapper,
 .product__image {
   position: relative;
-
   width: var(--width-product);
   height: var(--width-product);
   object-fit: contain;
@@ -74,16 +73,11 @@ body {
   z-index: 0;
 }
 
-/* .image__wrapper {
-  position: relative;
-  z-index: 0;
-} */
-
 .image__wrapper::before {
   position: absolute;
   content: '';
   background: url("../images/fon_item.png") no-repeat;
-  background-size: calc(300px + (800 - 300) * var(--formula));
+  background-size: contain;
 
   top: 0;
   left: -30%;
@@ -100,6 +94,5 @@ body {
 }
 
 .product__image_3-1 {
-  /* padding-block: 75px; */
   height: 300px;
 }
