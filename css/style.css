@@ -101,6 +101,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   gap: 25px calc(25px + (100 - 25) * var(--formula));
   height: calc(75px + (100 - 75) * var(--formula));
