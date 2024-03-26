@@ -102,12 +102,12 @@ h2 {
   justify-content: center;
   align-items: center;
 
-  gap: 25px calc(25px + (100 - 25) * var(--formula));
+  gap: 15px calc(15px + (50 - 15) * var(--formula));
   height: calc(75px + (100 - 75) * var(--formula));
   z-index: 4;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
   .menu__list {
     display: flex;
     justify-content: flex-start;
@@ -155,7 +155,7 @@ h2 {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .menu__burger,
   #menu__toggle {
     display: none;
@@ -233,7 +233,7 @@ h2 {
   padding-bottom: calc(75px + (400 - 75) * var(--formula));
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .top__inner {
     margin-left: 0;
   }
