@@ -101,7 +101,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: auto;
 
   gap: 25px calc(25px + (100 - 25) * var(--formula));
   height: calc(75px + (100 - 75) * var(--formula));
@@ -114,6 +113,7 @@ h2 {
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
+    overflow: auto;
 
     visibility: hidden;
 
