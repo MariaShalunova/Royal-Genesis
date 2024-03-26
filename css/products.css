@@ -97,6 +97,7 @@ body {
 .product__text {
   text-align: left;
   width: var(--width-product);
+  padding-inline: 15px;
 }
 
 .product__image_3-1 {
