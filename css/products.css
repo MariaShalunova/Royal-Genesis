@@ -10,7 +10,7 @@ body {
 
 @media (max-width:480px) {
   body {
-    background-size: cover;
+    background-size: auto;
   }
 }
 
