@@ -54,6 +54,7 @@ body {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+  gap: 15px;
 
   padding-top: 50px;
 }
@@ -62,33 +63,43 @@ body {
   padding-bottom: 25px;
 }
 
+.image__wrapper,
 .product__image {
+  position: relative;
+
   width: var(--width-product);
   height: var(--width-product);
   object-fit: contain;
+
+  z-index: 0;
 }
 
-.image__wrapper {
+/* .image__wrapper {
   position: relative;
-}
+  z-index: 0;
+} */
 
 .image__wrapper::before {
   position: absolute;
-  content: url("../images/fon_item.png");
+  content: '';
+  background: url("../images/fon_item.png") no-repeat;
+  background-size: var(--width-product);
 
-  top: -10%;
-  left: -40%;
-  width: var(--width-product);
-  height: var(--width-product);
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
   z-index: -1;
 }
 
 .product__text {
   text-align: left;
-  width: calc(300px + (500 - 300) * var(--formula));
+  width: var(--width-product);
 }
 
 .product__image_3-1 {
-  padding-block: 75px;
-  height: 350px;
+  /* padding-block: 75px; */
+  height: 300px;
 }
