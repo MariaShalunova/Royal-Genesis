@@ -94,5 +94,6 @@ body {
 }
 
 .product__image_3-1 {
+  padding-block: calc(15px + (100 - 15) * var(--formula));
   height: 300px;
 }
