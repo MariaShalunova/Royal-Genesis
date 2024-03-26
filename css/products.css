@@ -5,7 +5,6 @@
 
 body {
   background: url("../images/background-product.png") repeat;
-  background-size: contain;
 }
 
 @media (min-width:480px) {
