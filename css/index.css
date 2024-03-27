@@ -60,6 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 15px 50px;
 
   background: url("../images/background-properties.webp") no-repeat;
   background-size: cover;
