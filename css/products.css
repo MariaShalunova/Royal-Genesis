@@ -1,13 +1,3 @@
-:root {
-  --formula: ((100vw - 320px) / (1920 - 320));
-  --width-product: calc(300px + (500 - 300) * var(--formula));
-}
-
-body {
-  background: url("../images/background-product.png") repeat;
-  background-size: contain;
-}
-
 .step:nth-child(1) {
   margin-top: 150px;
 }
@@ -24,7 +14,6 @@ body {
   color: #000000;
   padding: 8px 32px;
   font-weight: bold;
-  font-size: 2rem;
 
   width: fit-content;
   z-index: 0;
@@ -54,7 +43,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-wrap: wrap;
   gap: 15px;
 
   padding-top: 50px;
