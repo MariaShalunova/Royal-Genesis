@@ -26,7 +26,7 @@
 
 .top__image {
   margin-top: calc(75px + (150 - 75) * var(--formula));
-  width: calc(200px + (var(--width-text) - 100 - 200) * var(--formula));
+  width: var(--width-product);
   height: 100%;
 }
 
@@ -65,21 +65,21 @@
   flex-wrap: wrap;
   gap: 15px 50px;
 
-  background: url("../images/background-properties.webp") no-repeat;
-  background-size: cover;
+  background: url("../images/background-properties.webp") repeat;
+  background-size: auto;
 
-  padding-top: 150px;
-  padding-bottom: 50px;
+  padding-top: calc(30px + (150 - 30) * var(--formula));
+  padding-bottom: calc(15px + (50 -150) * var(--formula));
 }
 
 .box__image {
-  width: 600px;
+  width: var(--width-image);
   object-fit: contain;
 }
 
 .box__description p{
   text-align: left;
-  width: 500px;
+  width: var(--width-product);
   padding: 15px 15px;
 
 }
@@ -104,9 +104,8 @@
 }
 
 .properties {
-  background: url("../images/background-properties.webp") no-repeat;
-  background-position: top;
-  background-size: cover;
+  background: url("../images/background-properties.webp") repeat;
+  background-size: auto;
 }
 
 .properties__title {
@@ -128,7 +127,7 @@
 }
 
 .properties__text {
-  width: calc(220px + (var(--width-text) - 220) * var(--formula));
+  width: var(--width-product);
   text-align: left;
   padding: calc(10px + (25 - 10) * var(--formula))
     calc(15px + (50 - 15) * var(--formula));
@@ -167,7 +166,7 @@
   margin-left: calc(50px + (300 - 50) * var(--formula));
   padding: calc(50px + (150 - 50) * var(--formula)) 0;
 
-  width: calc(250px + (var(--width-text) - 250) * var(--formula));
+  width: var(--width-product);
 }
 
 .application__list {
@@ -181,7 +180,7 @@
 }
 
 .application__image {
-  width: calc(200px + (500 - 200) * var(--formula));
+  width: var(--width-product);
   height: 100%;
 }
 
@@ -242,7 +241,7 @@
   padding-top: calc(75px + (150 - 75) * var(--formula));
   padding-bottom: calc(250px + (700 - 250) * var(--formula));
 
-  width: calc(250px + (var(--width-text) - 250) * var(--formula));
+  width: var(--width-product);
 }
 
 .about__logo {

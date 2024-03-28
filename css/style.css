@@ -3,6 +3,7 @@
   --inner-margin-x: 0 25px;
   --width-text: 500;
   --width-product: calc(300px + (var(--width-text) - 300) * var(--formula));
+  --width-image: calc(300px + (600 - 300) * var(--formula));
 }
 
 @font-face {
