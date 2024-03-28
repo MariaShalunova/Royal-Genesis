@@ -1,3 +1,15 @@
+:root {
+  --formula: ((100vw - 320px) / (1920 - 320));
+  --inner-margin-x: 0 25px;
+  --width-text: 500;
+  --width-product: calc(300px + (var(--width-text) - 300) * var(--formula));
+}
+
+body {
+  background: url("../images/background-product.png") repeat;
+  background-size: auto;
+}
+
 .step:nth-child(1) {
   margin-top: 150px;
 }
@@ -43,6 +55,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
   gap: 15px;
 
   padding-top: 50px;
@@ -88,11 +101,7 @@
   height: 250px;
 }
 
-@media (max-width:480px) {
-  body {
-    background-size: auto;
-  }
-
+@media (max-width:760px) {
   .image__wrapper::before {
     left: 0;
   }

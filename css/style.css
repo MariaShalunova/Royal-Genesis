@@ -78,8 +78,7 @@ p,
 body {
   margin: 0 auto;
   padding: 0;
-  background: url("../images/background-product.png") repeat;
-  background-size: contain;
+  background: black;
   font-weight: normal;
   font-family: sans-serif;
   font-family: "Roboto", sans-serif;
